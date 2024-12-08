@@ -1,0 +1,89 @@
+body.dark {
+  background-color: #1e1e1e;
+  color: #fff;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  padding: 20px;
+  margin: 20px;
+  width: 100%;
+  max-width: 300px; /* Establecer un ancho máximo para evitar desbordamiento */
+  box-sizing: border-box; /* Incluir el padding y el borde en el ancho y altura total */
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+.card__header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* Asegurar que el contenido esté alineado a la izquierda */
+  width: 100%;
+  margin-bottom: 15px; /* Mayor margen para separarlo del resto del contenido */
+}
+
+.card__header-img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.card__header-text {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.card__badge {
+  display: flex;
+  align-items: center;
+  padding: 8px 15px;
+  border-radius: 10px;
+  margin: 10px 0;
+  color: #fff;
+}
+
+.card__badge-icon {
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+}
+
+.card__badge-text {
+  font-size: 1.2rem;
+}
+
+.card__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center; /* Centrar el texto */
+  width: 100%;
+}
+
+.card__name {
+  font-size: 2rem; /* Aumentar el tamaño de la fuente del nombre */
+  margin: 15px 0; /* Aumentar el margen alrededor del nombre */
+  text-transform: capitalize;
+}
+
+.card__image {
+  width: 100%; /* Usar el 100% del ancho disponible */
+  height: auto;
+  max-width: 280px; /* Ajustar el tamaño máximo de la imagen */
+  max-height: 280px; /* Ajustar la altura máxima de la imagen */
+  margin: 15px 0;
+  border-radius: 10px;
+  background-color: #f2f2f2;
+  padding: 10px;
+  object-fit: contain; /* Asegurarse de que la imagen mantenga su proporción */
+}
